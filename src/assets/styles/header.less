@@ -1,0 +1,140 @@
+.header{
+    height: 130px;
+    background-color: @backgroundColor;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-bottom: 1px solid @grey;
+    &-logo{
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        padding-left: 32px;
+        padding-right: 40px;
+        height: 100%;
+        border-left: 1px solid @grey;
+        border-right: 1px solid @grey;
+        &__icon{
+            cursor: pointer;
+            &-svg{
+                width: 35px;
+                height: 35px;
+                fill: @orange;
+            }
+        }
+        &__text{
+            margin-left: 10px;
+            &-svg{
+                width: 199px;
+                height: 25px;
+                fill: @white;
+               
+            }
+        }
+    }
+    &-widgets{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 100%;
+        width: 735px;
+       
+        &-wrap{
+            height: 100%;
+            border-right: 1px solid @grey;
+            width: 735/7px;
+            padding-top: 26px;
+            &:hover{
+                background-color: @grey;
+            }   
+        }
+        .header__widget{
+            display: flex;
+            flex-direction: column;
+            align-items: center;        
+            &-svg{
+                pointer-events: none;
+                fill: none;
+                stroke-width: 2;
+                stroke: @lightenGrey;
+                width: 40px;
+                height: 40px;
+                margin-bottom: 12px;
+            }
+            &-text{
+                font-family: Rubik,Lato,"Lucida Grande","Lucida Sans Unicode",Tahoma,Sans-Serif;
+                font-weight: 400;
+                font-size: 16px;
+                color: @white;
+                
+            }
+        }
+        &:hover ._orange{
+            transition: all .22s;
+            stroke: @orange;
+            stroke-width: 2;
+        }
+        &:hover ._pink{
+            transition: all .22s;
+            stroke: @red;
+            stroke-width: 2;
+        }
+        &:hover ._red{
+            transition: all .22s;
+            stroke: @lightRed;
+            stroke-width: 2;
+        }
+        &:hover ._lilac{
+            transition: all .22s;
+            stroke: @lilac;
+            stroke-width: 2;
+        }
+        &:hover ._blue{
+            transition: all .22s;
+            stroke: @blue;
+            stroke-width: 2;
+        }
+        &:hover ._green{
+            transition: all .22s;
+            stroke: @green;
+            stroke-width: 2;
+        }
+        &:hover ._light-green{
+            transition: all .22s;
+            stroke: @lightGreen;
+            stroke-width: 2;
+        }
+    }  
+    &-search{
+        padding-left: 39px;
+        margin-top: -5px;
+        &-form{
+            display: flex;
+            align-items: center;
+            &__string{
+                width: 314px;
+                height: 60px;
+                background-color: @darkenGrey;
+                color: @white;
+                font-size: 20px;
+                border: 3px solid @white;
+                border-right: 0;
+                border-radius: 27px;
+                border-top-right-radius: 0;
+                border-bottom-right-radius: 0;
+            }
+            &__button{
+                border: 0;
+                border-top-right-radius: 27px;
+                border-bottom-right-radius: 27px;
+                height: 60px;
+                width: 66px;
+                background-image: linear-gradient(to right, @orange, @red);
+                border: 3px solid @white;
+                border-left: 0;
+                
+            }
+        }
+    } 
+}

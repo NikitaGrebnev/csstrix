@@ -1,0 +1,803 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
+  <title>Document</title>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header-logo">
+      <div class="header-logo__icon">
+        <svg class="header-logo__icon-svg">
+          <use xlink:href="#logo-star">
+            <symbol id="logo-star" viewBox="0 0 362.62 388.52">
+              <path
+                d="M156.58 239l-88.3 64.75c-10.59 7.06-18.84 11.77-29.43 11.77-21.19 0-38.85-18.84-38.85-40 0-17.69 14.13-30.64 27.08-36.52l103.6-44.74-103.6-45.92C13 142.46 0 129.51 0 111.85 0 90.66 18.84 73 40 73c10.6 0 17.66 3.53 28.25 11.77l88.3 64.75-11.74-104.78C141.28 20 157.76 0 181.31 0s40 18.84 36.5 43.56L206 149.52l88.3-64.75C304.93 76.53 313.17 73 323.77 73a39.2 39.2 0 0 1 38.85 38.85c0 18.84-12.95 30.61-27.08 36.5l-103.61 45.91L335.54 239c14.13 5.88 27.08 18.83 27.08 37.67 0 21.19-18.84 38.85-40 38.85-9.42 0-17.66-4.71-28.26-11.77L206 239l11.77 104.78c3.53 24.72-12.95 44.74-36.5 44.74s-40-18.84-36.5-43.56z">
+              </path>
+            </symbol>
+          </use>
+        </svg>
+      </div>
+      <div class="header-logo__text">
+        <svg class="header-logo__text-svg">
+          <use xlink:href="#logo">
+            <symbol id="logo" viewBox="0 0 474.15 58.26">
+              <path
+                d="M46 42.57a4.5 4.5 0 0 0-3 1.13c-4.1 3.46-8.13 5.39-14.08 5.39-10.78 0-18.58-8.93-18.58-20V29c0-11 7.88-19.87 18.58-19.87a20.42 20.42 0 0 1 13.48 5.03 4.95 4.95 0 0 0 7.88-3.86 4.94 4.94 0 0 0-1.93-3.94C43.44 2.57 37.73 0 29 0 12 0 0 13.12 0 29.13v.16c0 16.17 12.23 29 28.64 29 9.09 0 15.12-2.9 20.43-7.56a4.76 4.76 0 0 0 1.61-3.54A4.71 4.71 0 0 0 46 42.57zm36.86-17.95C72 22 69.43 20.12 69.43 15.77v-.16c0-3.7 3.38-6.68 9.17-6.68 4.43 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94A31 31 0 0 0 78.76.16C67.58.16 59.53 6.84 59.53 16.5v.16c0 10.38 6.76 13.92 18.74 16.82C88.73 35.89 91 38.06 91 42.08v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7A4.64 4.64 0 0 0 59.61 51a35.05 35.05 0 0 0 21.16 7.1c11.83 0 20.11-6.28 20.11-16.82v-.16c0-9.34-6.11-13.6-18.02-16.5zm49.88 0c-10.86-2.57-13.43-4.51-13.43-8.85v-.16c0-3.7 3.38-6.68 9.17-6.68 4.42 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94A31 31 0 0 0 128.64.16c-11.18 0-19.23 6.68-19.23 16.33v.16c0 10.38 6.76 13.92 18.74 16.82 10.46 2.41 12.71 4.59 12.71 8.61v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7 4.64 4.64 0 0 0 1.96 3.77 35.05 35.05 0 0 0 21.16 7.08c11.83 0 20.11-6.28 20.11-16.82v-.16c0-9.32-6.11-13.58-18.02-16.48zm45.62 3.22h-15.13a4.79 4.79 0 0 0 0 9.58h15.12a4.79 4.79 0 0 0 0-9.58zM224 1h-37.45a4.59 4.59 0 0 0 0 9.17h13.68v42.62a5 5 0 0 0 10 0V10.14H224A4.59 4.59 0 0 0 224 1zm38.86 0h-20.15a4.91 4.91 0 0 0-5 5v46.79a4.95 4.95 0 0 0 9.89 0V37.66h12.47l13.68 17.46a5.65 5.65 0 0 0 4.83 2.58 4.67 4.67 0 0 0 4.75-4.59 5.74 5.74 0 0 0-1.61-3.78l-10.78-13.6c7.56-2.33 12.79-7.81 12.79-16.82v-.16a17 17 0 0 0-4.66-12.15C275.45 3.06 269.9 1 262.82 1zm10.86 18.51c0 5.71-4.51 9.41-11.58 9.41h-14.53V10H262c7.32 0 11.67 3.3 11.67 9.33zm27-18.91a4.89 4.89 0 0 0-5 4.91v47.28a4.95 4.95 0 0 0 9.89 0V5.47a4.88 4.88 0 0 0-4.98-4.91zm62.67 42a4.5 4.5 0 0 0-3 1.13c-4.1 3.46-8.13 5.39-14.08 5.39-10.78 0-18.58-8.93-18.58-20V29c0-11 7.88-19.87 18.58-19.87a20.42 20.42 0 0 1 13.44 5.07 4.95 4.95 0 0 0 7.88-3.86 4.94 4.94 0 0 0-1.93-3.94C360.72 2.57 355 0 346.32 0c-17.06 0-29 13.12-29 29.13v.16c0 16.17 12.23 29 28.64 29 9.09 0 15.12-2.9 20.43-7.56a4.76 4.76 0 0 0 1.61-3.58 4.71 4.71 0 0 0-4.7-4.58zm41-16.82l17.54-16.9a4.81 4.81 0 0 0 1.77-3.7A4.53 4.53 0 0 0 419 .56a5.2 5.2 0 0 0-4.1 1.85l-26.66 26.88V5.47a4.95 4.95 0 0 0-9.9 0v47.32a4.95 4.95 0 0 0 9.9 0V41.12l9.17-8.85 18.1 23.09a5 5 0 0 0 4.18 2.33 4.83 4.83 0 0 0 5-4.83 5.36 5.36 0 0 0-1.37-3.54zm51.8-1.13c-10.92-2.65-13.49-4.53-13.49-8.88v-.16c0-3.7 3.38-6.68 9.17-6.68 4.42 0 8.61 1.45 13 4.26a4.78 4.78 0 0 0 2.57.72 4.6 4.6 0 0 0 4.67-4.59 4.47 4.47 0 0 0-2.17-3.94A31 31 0 0 0 452 .16c-11.15 0-19.2 6.68-19.2 16.34v.16c0 10.38 6.76 13.92 18.74 16.82 10.46 2.41 12.71 4.59 12.71 8.61v.16c0 4.18-3.86 7.08-10 7.08a24.42 24.42 0 0 1-15.77-5.79 4.79 4.79 0 0 0-7.56 3.7 4.64 4.64 0 0 0 1.96 3.76A35.05 35.05 0 0 0 454 58.1c11.83 0 20.11-6.28 20.11-16.82v-.16c.04-9.34-6.11-13.6-17.98-16.5z">
+              </path>
+            </symbol>
+          </use>
+        </svg>
+      </div>
+
+    </div>
+    <div class="header-widgets">
+      <div class="header-widgets-wrap">
+        <a href="" class="header__widget">
+          <svg class="header__widget-svg _orange" viewBox="0 0 40 40">
+            <path
+              d="M24.9 6H9.1C7.9 6 7 6.9 7 8.1V16c0 1.2.9 2.1 2.1 2.1h15.8c1.2 0 2.1-.9 2.1-2.1V8.1c0-1.2-.9-2.1-2.1-2.1z">
+            </path>
+            <path
+              d="M33.2 4H37c1.1 0 2 .9 2 2v29.2c0 2.1-1.7 3.8-3.8 3.8H4.8C2.7 39 1 37.3 1 35.2V4.8C1 2.7 2.7 1 4.8 1H29c2.2 0 4 1.8 4 4v28c0 1.7 1.3 3 3 3s3-1.3 3-3V9M7 23h20M7 28h20M7 33h20">
+            </path>
+          </svg>
+          <span class="header__widget-text">Articles</span>
+        </a>
+      </div>
+      <div class="header-widgets-wrap">
+        <a href="" class="header__widget">
+          <svg class="header__widget-svg _pink" viewBox="0 0 40 40">
+            <path d="M20 39c10.493 0 19-8.507 19-19S30.493 1 20 1 1 9.507 1 20s8.507 19 19 19z"></path>
+            <path d="M20 33c7.18 0 13-5.82 13-13S27.18 7 20 7 7 12.82 7 20s5.82 13 13 13z"></path>
+          </svg>
+          <span class="header__widget-text">Videos</span>
+        </a>
+      </div>
+      <div class="header-widgets-wrap">
+        <a href="" class="header__widget">
+          <svg class="header__widget-svg  _red" viewBox="0 0 36 40">
+            <path d="M31 39H9V1h22c2.2 0 4 1.8 4 4v30c0 2.2-1.8 4-4 4zM9 1H1v38h8V1zM2 10h7M2 14h7"></path>
+            <path d="M28 16l-4-4-4 4V1h8v15z"></path>
+          </svg>
+          <span class="header__widget-text">Almanac</span>
+        </a>
+      </div>
+      <div class="header-widgets-wrap">
+        <a href="" class="header__widget">
+          <svg class="header__widget-svg _lilac" viewBox="0 0 40 40">
+            <path
+              d="M17.2 37.8l-15-15c-1.6-1.6-1.6-4.1 0-5.7l15-15c1.6-1.6 4.1-1.6 5.7 0l15 15c1.6 1.6 1.6 4.1 0 5.7l-15 15c-1.6 1.6-4.2 1.6-5.7 0z">
+            </path>
+            <path d="M14 16l-4 4 4 4M26 24l4-4-4-4M21 16l-2 8"></path>
+          </svg>
+          <span class="header__widget-text">Snippets</span>
+        </a>
+      </div>
+      <div class="header-widgets-wrap">
+        <a href="" class="header__widget">
+          <svg class="header__widget-svg _blue" viewBox="0 0 40 40">
+            <path
+              d="M35 39H5c-2.2 0-4-1.8-4-4V19l19 9 19-9v16c0 2.2-1.8 4-4 4zM2 38l12-13M38 38L26 25M33.2 15l5.8 4M1 19l5.8-4">
+            </path>
+            <path d="M7 22V5c0-2.2 1.8-4 4-4h18c2.2 0 4 1.8 4 4v17"></path>
+            <path d="M26 13c0 3.3-2.7 6-6 6s-6-2.7-6-6"></path>
+          </svg>
+          <span class="header__widget-text">Newsletter</span>
+        </a>
+      </div>
+      <div class="header-widgets-wrap">
+        <a href="" class="header__widget">
+          <svg class="header__widget-svg _green" viewBox="0 0 40 40">
+            <path d="M39 23l-19 4-19-4V12c0-2.2 1.8-4 4-4h30c2.2 0 4 1.8 4 4v11z"></path>
+            <path d="M38 24v11c0 2.2-1.8 4-4 4H6c-2.2 0-4-1.8-4-4V24M32 8H7V5c0-2.2 1.8-4 4-4h17c2.2 0 4 1.8 4 4v3z">
+            </path>
+            <path d="M15 27c0 2.75 2.25 5 5 5s5-2.25 5-5"></path>
+          </svg>
+          <span class="header__widget-text">Jobs</span>
+        </a>
+      </div>
+      <div class="header-widgets-wrap">
+        <a href="" class="header__widget">
+          <svg class="header__widget-svg _light-green" viewBox="0 0 40 40">
+            <path
+              d="M6.2 37.4L14 35V1L3.8 4.1C2.1 4.7 1 6.2 1 7.9v25.7c0 2.7 2.6 4.6 5.2 3.8zM26 39l10.2-3.1c1.7-.5 2.8-2.1 2.8-3.8V5c0-2.7-2.6-4.6-5.1-3.8L26 3.6V39zM14 1l12 3M14 35l12 4">
+            </path>
+          </svg>
+          <span class="header__widget-text">Guides</span>
+        </a>
+      </div>
+    </div>
+    <div class="header-search">
+      <form class="header-search-form" action="">
+        <input type="search" class="header-search-form__string" name="" id="">
+        <input type="button" class="header-search-form__button" value="">
+      </form>
+    </div>
+  </header>
+  <section class="article">
+    <div class="article__info">
+      <h5 class="article__info-inscription">Fresh Article</h5>
+      <span class="article__info-date">April 22, 2019 </span>
+    </div>
+    <h1 class="article__header">So, You Wanna Submit a Proposal to Speak at an Event</h1>
+    <div class="article-additional">
+      <div class="article-additional__avatar">
+        <img class="article-additional__avatar-icon"
+          src="https://secure.gravatar.com/avatar/5e6805ca1cd7538ad32437cdb7fc1221?s=80&d=retro&r=pg" alt=""
+          srcset="https://secure.gravatar.com/avatar/5e6805ca1cd7538ad32437cdb7fc1221?s=160&d=retro&r=pg 2x">
+        <svg class="article-additional__avatar-semicircle" viewBox="0 0 106 57">
+          <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+        </svg>
+      </div>
+      <div class="article-additional__item">
+        <p class="article-additional__item-header">Author</p>
+        <p class="article-additional__item-footer">Jason Rodriguez</p>
+      </div>
+      <div class="article-additional__item">
+        <p class="article-additional__item-header">Comments</p>
+        <p class="article-additional__item-footer">Start the Conversation</p>
+      </div>
+    </div>
+    <div class="article-content">
+      <p class="article-content__part">You’ve been scouring the web for upcoming events. You’ve subscribed to <span
+          class="_emphosized">Developer Avocados</span> and you’ve bookmarked <span
+          class="_emphosized">conferences.css-tricks.com</span>. And now you’ve found a call for proposals (<abbr
+          title="CFP">CFP</abbr>) that you can’t wait to enter. You quickly fill out the online form and your pinky
+        races towards the Enter button...</p>
+      <p class="article-content__part">Stop. Take a deep breath. And move slowly away from the keyboard.</p>
+      <p class="article-content__part">As a <span class="_emphosized">conference organizer</span>, I’ve gone through
+        hundreds — if not thousands — of speaking proposals. While … <span class="_colored">Read article </span></p>
+    </div>
+    <a href="" class="article__button">Public speaking</a>
+    <div class="article-advertisment">
+      <a href="" class="article-advertisment__link">
+        <img class="article-advertisment__link-image"
+          src="https://res.cloudinary.com/css-tricks/image/upload/v1554322762/woo_scz9a9.png" alt="">
+      </a>
+      <div class="article-advertisment__footer">
+        <img class="article-advertisment__footer-icon"
+          src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1544564316/Avatar_qr6vy9.png" alt="">
+        <p class="article-advertisment__footer-text"><a href=""
+            class="article-advertisment__footer-text-link">monday.com </a>is built to help you manage your projects.</p>
+      </div>
+    </div>
+  </section>
+  <section class="cards">
+    <div class="cards-popular">
+      <h2 class="cards-popular__header">Popular<br />this<br />month</h2>
+      <p class="cards-popular__text">Sponsored by<br /><a class="cards-popular__text-link"
+          href="https://synd.co/2CFkDvJ">HelloSign</a></p>
+    </div>
+    <div class="scrollbar">
+      <div class="scrollbar-card">
+        <div class="scrollbar-card__article">
+          Article
+          <span class="scrollbar-card__article-date">
+            Jan 21, 2019
+          </span>
+        </div>
+        <h2 class="scrollbar-card__header">The Great Divide</h2>
+        <div class="scrollbar-card__author">
+          <img class="scrollbar-card__author-icon"
+            src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+            srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+          <p class="scrollbar-card__author-name"><span class="scrollbar-card__author-name-top">Author</span><br /> Chris
+            Coyier</p>
+          <svg class="scrollbar-card__author-halfcircle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+        </div>
+        <a href="" class="scrollbar-card__button">Front-end developer</a>
+      </div>
+      <div class="scrollbar-card">
+        <div class="scrollbar-card__article">
+          Article
+          <span class="scrollbar-card__article-date">
+            Jan 21, 2019
+          </span>
+        </div>
+        <h2 class="scrollbar-card__header">The Great Divide</h2>
+        <div class="scrollbar-card__author">
+          <img class="scrollbar-card__author-icon"
+            src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+            srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+          <p class="scrollbar-card__author-name"><span class="scrollbar-card__author-name-top">Author</span><br /> Chris
+            Coyier</p>
+          <svg class="scrollbar-card__author-halfcircle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+        </div>
+        <a href="" class="scrollbar-card__button">Front-end developer</a>
+      </div>
+      <div class="scrollbar-card">
+        <div class="scrollbar-card__article">
+          Article
+          <span class="scrollbar-card__article-date">
+            Jan 21, 2019
+          </span>
+        </div>
+        <h2 class="scrollbar-card__header">The Great Divide</h2>
+        <div class="scrollbar-card__author">
+          <img class="scrollbar-card__author-icon"
+            src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+            srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+          <p class="scrollbar-card__author-name"><span class="scrollbar-card__author-name-top">Author</span><br /> Chris
+            Coyier</p>
+          <svg class="scrollbar-card__author-halfcircle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+        </div>
+        <a href="" class="scrollbar-card__button">Front-end developer</a>
+      </div>
+      <div class="scrollbar-card">
+        <div class="scrollbar-card__article">
+          Article
+          <span class="scrollbar-card__article-date">
+            Jan 21, 2019
+          </span>
+        </div>
+        <h2 class="scrollbar-card__header">The Great Divide</h2>
+        <div class="scrollbar-card__author">
+          <img class="scrollbar-card__author-icon"
+            src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+            srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+          <p class="scrollbar-card__author-name"><span class="scrollbar-card__author-name-top">Author</span><br /> Chris
+            Coyier</p>
+          <svg class="scrollbar-card__author-halfcircle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+        </div>
+        <a href="" class="scrollbar-card__button">Front-end developer</a>
+      </div>
+      <div class="scrollbar-card">
+        <div class="scrollbar-card__article">
+          Article
+          <span class="scrollbar-card__article-date">
+            Jan 21, 2019
+          </span>
+        </div>
+        <h2 class="scrollbar-card__header">The Great Divide</h2>
+        <div class="scrollbar-card__author">
+          <img class="scrollbar-card__author-icon"
+            src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+            srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+          <p class="scrollbar-card__author-name"><span class="scrollbar-card__author-name-top">Author</span><br /> Chris
+            Coyier</p>
+          <svg class="scrollbar-card__author-halfcircle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+        </div>
+        <a href="" class="scrollbar-card__button">Front-end developer</a>
+      </div>
+      <div class="scrollbar-card">
+        <div class="scrollbar-card__article">
+          Article
+          <span class="scrollbar-card__article-date">
+            Jan 21, 2019
+          </span>
+        </div>
+        <h2 class="scrollbar-card__header">The Great Divide</h2>
+        <div class="scrollbar-card__author">
+          <img class="scrollbar-card__author-icon"
+            src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+            srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+          <p class="scrollbar-card__author-name"><span class="scrollbar-card__author-name-top">Author</span><br /> Chris
+            Coyier</p>
+          <svg class="scrollbar-card__author-halfcircle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+        </div>
+        <a href="" class="scrollbar-card__button">Front-end developer</a>
+      </div>
+      <div class="scrollbar-card">
+        <div class="scrollbar-card__article">
+          Article
+          <span class="scrollbar-card__article-date">
+            Jan 21, 2019
+          </span>
+        </div>
+        <h2 class="scrollbar-card__header">The Great Divide</h2>
+        <div class="scrollbar-card__author">
+          <img class="scrollbar-card__author-icon"
+            src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+            srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+          <p class="scrollbar-card__author-name"><span class="scrollbar-card__author-name-top">Author</span><br /> Chris
+            Coyier</p>
+          <svg class="scrollbar-card__author-halfcircle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+        </div>
+        <a href="" class="scrollbar-card__button">Front-end developer</a>
+      </div>
+      <div class="scrollbar-card">
+        <div class="scrollbar-card__article">
+          Article
+          <span class="scrollbar-card__article-date">
+            Jan 21, 2019
+          </span>
+        </div>
+        <h2 class="scrollbar-card__header">The Great Divide</h2>
+        <div class="scrollbar-card__author">
+          <img class="scrollbar-card__author-icon"
+            src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+            srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+          <p class="scrollbar-card__author-name"><span class="scrollbar-card__author-name-top">Author</span><br /> Chris
+            Coyier</p>
+          <svg class="scrollbar-card__author-halfcircle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+        </div>
+        <a href="" class="scrollbar-card__button">Front-end developer</a>
+      </div>
+      <div class="scrollbar-card">
+        <div class="scrollbar-card__article">
+          Article
+          <span class="scrollbar-card__article-date">
+            Jan 21, 2019
+          </span>
+        </div>
+        <h2 class="scrollbar-card__header">The Great Divide</h2>
+        <div class="scrollbar-card__author">
+          <img class="scrollbar-card__author-icon"
+            src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+            srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+          <p class="scrollbar-card__author-name"><span class="scrollbar-card__author-name-top">Author</span><br /> Chris
+            Coyier</p>
+          <svg class="scrollbar-card__author-halfcircle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+        </div>
+        <a href="" class="scrollbar-card__button">Front-end developer</a>
+      </div>
+      <div class="scrollbar-card">
+        <div class="scrollbar-card__article">
+          Article
+          <span class="scrollbar-card__article-date">
+            Jan 21, 2019
+          </span>
+        </div>
+        <h2 class="scrollbar-card__header">The Great Divide</h2>
+        <div class="scrollbar-card__author">
+          <img class="scrollbar-card__author-icon"
+            src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+            srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+          <p class="scrollbar-card__author-name"><span class="scrollbar-card__author-name-top">Author</span><br /> Chris
+            Coyier</p>
+          <svg class="scrollbar-card__author-halfcircle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+        </div>
+        <a href="" class="scrollbar-card__button">Front-end developer</a>
+      </div>
+      <div class="scrollbar-card">
+        <div class="scrollbar-card__article">
+          Article
+          <span class="scrollbar-card__article-date">
+            Jan 21, 2019
+          </span>
+        </div>
+        <h2 class="scrollbar-card__header">The Great Divide</h2>
+        <div class="scrollbar-card__author">
+          <img class="scrollbar-card__author-icon"
+            src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+            srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+          <p class="scrollbar-card__author-name"><span class="scrollbar-card__author-name-top">Author</span><br /> Chris
+            Coyier</p>
+          <svg class="scrollbar-card__author-halfcircle" viewBox="0 0 106 57">
+            <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+          </svg>
+        </div>
+        <a href="" class="scrollbar-card__button">Front-end developer</a>
+      </div>
+    </div>
+  </section>
+  <section class="posts">
+    <div class="images">
+      <div class="images-main">
+        <a href="" class="images-main__link">
+          <img class="images-main__link-image"
+            src="https://res.cloudinary.com/css-tricks/image/upload/v1554304323/developercloud_600x600_nsriqt.jpg"
+            alt="">
+        </a>
+        <div class="images-main__footer">
+          <img class="images-main__footer-icon"
+            src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1544564316/Avatar_qr6vy9.png" alt="">
+          <p class="images-main__footer-text"><a href="" class="images-main__footer-text-link">Wufoo </a> powers all our
+            web forms here at CSS-Tricks, and has for over a decade!
+          </p>
+        </div>
+      </div>
+      <div class="images-main">
+        <a href="" class="images-main__link">
+          <img class="images-main__link-image"
+            src="https://res.cloudinary.com/css-tricks/image/upload/v1554322762/woo_scz9a9.png" alt="">
+        </a>
+        <div class="images-main__footer">
+          <img class="images-main__footer-icon"
+            src="https://res.cloudinary.com/css-tricks/image/upload/f_auto,q_auto/v1544563294/chriscoyier_fmktwo.jpg"
+            alt="">
+          <p class="images-main__footer-text">Improve DevOps workflows with 1-Click Apps on <a href=""
+              class="images-main__footer-text-link">DigitalOcean Marketplace</a> from Gitlab, Docker
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="paragraphs">
+      <div class="paragraphs-item _first-item">
+        <div class="paragraphs-item__additional">
+          Sponsored
+          <svg class="paragraphs-item__additional-svg" viewBox="0 0 100 58.84" width='28px' height="28px">
+            <path
+              d="M78.47 48H49.21a10.66 10.66 0 0 1-9-4.91h10.58A21.57 21.57 0 0 0 71.7 26.64h6.76a10.67 10.67 0 0 1 0 21.33zm-67.6-26.47a10.67 10.67 0 0 1 10.67-10.66H50.8A10.59 10.59 0 0 1 58.34 14a10.94 10.94 0 0 1 1.43 1.79H49.21a21.57 21.57 0 0 0-20.92 16.4h-6.76a10.67 10.67 0 0 1-10.66-10.66zm39.92 10.66H39.86a10.68 10.68 0 0 1 9.35-5.54h10.93a10.67 10.67 0 0 1-9.35 5.54zM100 37.31a21.53 21.53 0 0 0-21.53-21.53h-6.92A21.53 21.53 0 0 0 50.8 0H21.54a21.53 21.53 0 0 0 0 43.06h6.83v-.31A21.41 21.41 0 0 0 34 52.53a21.4 21.4 0 0 0 15.2 6.31h29.26A21.56 21.56 0 0 0 100 37.31z">
+            </path>
+          </svg>
+          <span class="paragraphs-item__additional-element"> Link</span>
+          <span class="paragraphs-item__additional-time">April 25, 2019</span>
+        </div>
+        <h2 class="paragraphs-item__header">Corvid by Wix: Accelerated Development of Web Applications</h2>
+        <div class="paragraphs-item__basic">
+          <p class="paragraphs-item__basic-element">It's been interesting to watch <a
+              class="paragraphs-item__basic-element-link" href="">Wix</a> evolve from a website builder into a
+            full-fledged platform for developing web applications. It's still just as easy for anyone to spin up a
+            website with the visual builder that's always been there, but Wix Code was introduced a little while back as
+            a way to give developers more hands-on control of the code under the hood to make custom sites.</p>
+          <p class="paragraphs-item__basic-element">Well, that evolution continues as Wix Code recently became <a
+              class="paragraphs-item__basic-element-link _bold" href="">Corvid by Wix</a>....</p>
+        </div>
+        <div class="paragraphs-item__footer">
+          <a href="" class="paragraphs-item__footer-link">Our Notes</a>
+          /
+          <a href="" class="paragraphs-item__footer-link"> Read at synd.co</a>
+        </div>
+      </div>
+      <div class="paragraphs-item _second-item">
+        <div class="paragraphs-item__additional">
+          <span class="paragraphs-item__additional-element">Article</span>
+          <span class="paragraphs-item__additional-time">April 25, 2019</span>
+        </div>
+        <h2 class="paragraphs-item__header">Using Parcel as a Bundler for React Applications</h2>
+
+        <div class="paragraphs-item-author">
+          <div class="paragraphs-item-author__avatar">
+            <img class="paragraphs-item-author__avatar-icon"
+              src="https://secure.gravatar.com/avatar/b0d0ce2a0e59387acbf0848f62aa52bf?s=80&d=retro&r=pg" alt=""
+              srcset="https://secure.gravatar.com/avatar/b0d0ce2a0e59387acbf0848f62aa52bf?s=160&d=retro&r=pg 2x">
+            <svg class="paragraphs-item-author__avatar-semicircle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+          </div>
+          <div class="paragraphs-item-author__info">
+            <p class="paragraphs-item-author__info-header">Author</p>
+            <p class="paragraphs-item-author__info-footer">Kingsley Silas</p>
+          </div>
+          <div class="paragraphs-item-author__info">
+            <p class="paragraphs-item-author__info-header">2 Comments</p>
+            <p class="paragraphs-item-author__info-footer">Join the Conversation</p>
+          </div>
+        </div>
+
+        <div class="paragraphs-item__basic">
+          <p class="paragraphs-item__basic-element">You may already be familiar with <a
+              class="paragraphs-item__basic-element-link" href="">webpack</a> for asset management on projects. However,
+            there’s another cool tool out there called <a class="paragraphs-item__basic-element-link"
+              href="">Parcel</a>, which is comparable to webpack in that it helps with hassle-free asset bundling. Where
+            Parcel really shines is that it requires zero configuration to get up and running, where other bundlers
+            often require writing a ton code just to get started. Plus, Parcel is super fast when it runs because it
+            utilizes multicore processing where others work off … <span class="_colored">Read article </span></p>
+        </div>
+
+        <div class="paragraphs-item-buttons">
+          <a href="" class="paragraphs-item-buttons__unit">Bundling</a>
+          <a href="" class="paragraphs-item-buttons__unit">React</a>
+          <a href="" class="paragraphs-item-buttons__unit">Webpack</a>
+        </div>
+      </div>
+      <div class="paragraphs-item _third-item">
+        <div class="paragraphs-item__additional">
+          <span class="paragraphs-item__additional-element">Article</span>
+          <span class="paragraphs-item__additional-time">April 24, 2019</span>
+        </div>
+        <h2 class="paragraphs-item__header">That Time I Tried Browsing the Web Without CSS</h2>
+
+        <div class="paragraphs-item-author">
+          <div class="paragraphs-item-author__avatar">
+            <img class="paragraphs-item-author__avatar-icon"
+              src="https://css-tricks.com/wp-content/uploads/2019/04/jon1-80x80.jpg" alt="">
+            <svg class="paragraphs-item-author__avatar-semicircle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+          </div>
+          <div class="paragraphs-item-author__info">
+            <p class="paragraphs-item-author__info-header">Author</p>
+            <p class="paragraphs-item-author__info-footer">Jon Kantner</p>
+          </div>
+          <div class="paragraphs-item-author__info">
+            <p class="paragraphs-item-author__info-header">3 Comments</p>
+            <p class="paragraphs-item-author__info-footer">Join the Conversation</p>
+          </div>
+        </div>
+
+        <div class="paragraphs-item__basic">
+          <p class="paragraphs-item__basic-element">CSS is what gives every website its design. Websites sure aren’t
+            very fun and friendly without it! I’ve read about <a class="paragraphs-item__basic-element-link"
+              href="">somebody going a week without JavaScript</a> and how the experience resulted in websites that were
+            faster, though certain aspects of them would not function as expected.</p>
+          <p class="paragraphs-item__basic-element">But CSS. Turning off CSS while browsing the web wouldn’t exactly
+            make the web far less usable... right? Or, like JavaScript, would some features not work as expected? Out of
+            curiosity, I decided to … <span class="_colored">Read article </span></p>
+        </div>
+
+        <div class="paragraphs-item-buttons">
+          <a href="" class="paragraphs-item-buttons__unit">Accessibility</a>
+          <a href="" class="paragraphs-item-buttons__unit">Audit</a>
+          <a href="" class="paragraphs-item-buttons__unit">css</a>
+          <a href="" class="paragraphs-item-buttons__unit">Semantics</a>
+        </div>
+      </div>
+      <a href="" class="paragraphs-item__main-btn">Keep browsing in the archives</a>
+    </div>
+  </section>
+  <section class="grid">
+    <svg class="grid-star" width="0" height="0" viewBox="0 0 362.62 388.52">
+      <path
+        d="M156.58 239l-88.3 64.75c-10.59 7.06-18.84 11.77-29.43 11.77-21.19 0-38.85-18.84-38.85-40 0-17.69 14.13-30.64 27.08-36.52l103.6-44.74-103.6-45.92C13 142.46 0 129.51 0 111.85 0 90.66 18.84 73 40 73c10.6 0 17.66 3.53 28.25 11.77l88.3 64.75-11.74-104.78C141.28 20 157.76 0 181.31 0s40 18.84 36.5 43.56L206 149.52l88.3-64.75C304.93 76.53 313.17 73 323.77 73a39.2 39.2 0 0 1 38.85 38.85c0 18.84-12.95 30.61-27.08 36.5l-103.61 45.91L335.54 239c14.13 5.88 27.08 18.83 27.08 37.67 0 21.19-18.84 38.85-40 38.85-9.42 0-17.66-4.71-28.26-11.77L206 239l11.77 104.78c3.53 24.72-12.95 44.74-36.5 44.74s-40-18.84-36.5-43.56z">
+      </path>
+    </svg>
+    <div class="grid-column">
+      <div class="grid-column__head _head-first"></div>
+      <div class="grid-column__main _main-first"></div>
+      <div class="grid-column__additional _additional-first"></div>
+      <div class="grid-column__footer _footer-first"></div>
+    </div>
+    <div class="grid-column">
+      <div class="grid-column__head _head-second">
+        <h2 class="grid-column__head-header">Monthly Mixup</h2>
+      </div>
+      <div class="grid-column__main _main-second">
+        <div class="main-card">
+          <div class="main-card__article">
+            Article
+            <span class="main-card__article-date">
+              Jan 21, 2019
+            </span>
+          </div>
+          <h2 class="main-card__header">Twenty Years as a Freelance Web Developer: Wisdom Gained and Lessons Learned
+          </h2>
+          <div class="main-card__author">
+            <img class="main-card__author-icon"
+              src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+              srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+            <p class="main-card__author-name"><span class="main-card__author-name-top">Author</span><br /> Chris
+              Coyier</p>
+            <svg class="main-card__author-halfcircle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+      <div class="grid-column__additional _additional-second"></div>
+      <div class="grid-column__footer _footer-second"></div>
+    </div>
+    <div class="grid-column">
+      <div class="grid-column__head _head-third"></div>
+      <div class="grid-column__main _main-third"></div>
+      <div class="grid-column__additional _additional-third">
+        <span class="grid-column__additional-content">
+          .signature <span class="grid-column__additional-content-value">( stroke-<br />dasharray:</span> <span
+            class="grid-column__additional-content-number"> 5</span> <span
+            class="grid-column__additional-content-value">; )</span>
+        </span>
+      </div>
+      <div class="grid-column__footer _footer-third"></div>
+    </div>
+    <div class="grid-column">
+      <div class="grid-column__head _head-forth"></div>
+      <div class="grid-column__main _main-forth">
+        <div class="main-card _second-card">
+          <div class="main-card__article">
+            Article
+            <span class="main-card__article-date">
+              Jan 21, 2019
+            </span>
+          </div>
+          <h2 class="main-card__header">Need to Test API<br /> Endpoints? Two<br /> Quick Ways to Do<br /> It.
+          </h2>
+          <div class="main-card__author">
+            <img class="main-card__author-icon"
+              src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+              srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+            <p class="main-card__author-name"><span class="main-card__author-name-top">Author</span><br /> Chris
+              Coyier</p>
+            <svg class="main-card__author-halfcircle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+          </div>
+
+        </div>
+      </div>
+      <div class="grid-column__additional _additional-forth">
+        <div class="main-card _third-card">
+          <div class="main-card__article">
+            Article
+            <span class="main-card__article-date">
+              Jan 21, 2019
+            </span>
+          </div>
+          <h2 class="main-card__header">Animate Calligraphy with SVG
+          </h2>
+          <div class="main-card__author">
+            <img class="main-card__author-icon"
+              src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+              srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+            <p class="main-card__author-name"><span class="main-card__author-name-top">Author</span><br /> Chris
+              Coyier</p>
+            <svg class="main-card__author-halfcircle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+      <div class="grid-column__footer _footer-forth"></div>
+    </div>
+    <div class="grid-column">
+      <div class="grid-column__head _head-fifth">
+        <span class="grid-column__head-content">
+          .menu <span class="grid-column__head-content-value">( z-index:</span> <span
+            class="grid-column__head-content-number"> 1</span> <span class="grid-column__head-content-value">; )</span>
+        </span>
+      </div>
+      <div class="grid-column__main _main-fifth"></div>
+      <div class="grid-column__additional _additional-fifth">
+
+      </div>
+      <div class="grid-column__footer _footer-fifth">
+        <div class="main-card _forth-card">
+          <div class="main-card__article">
+            Article
+            <span class="main-card__article-date">
+              Jan 21, 2019
+            </span>
+          </div>
+          <h2 class="main-card__header">Easing Linear Gradients
+          </h2>
+          <div class="main-card__author">
+            <img class="main-card__author-icon"
+              src="https://secure.gravatar.com/avatar/7abb900ba55e2722ba240b15184539b7?s=80&d=retro&r=pg"
+              srcset="https://secure.gravatar.com/avatar/8081b26e05bb4354f7d65ffc34cbbd67?s=160&d=retro&r=pg 2x" alt="">
+            <p class="main-card__author-name"><span class="main-card__author-name-top">Author</span><br /> Chris
+              Coyier</p>
+            <svg class="main-card__author-halfcircle" viewBox="0 0 106 57">
+              <path d="M102 4c0 27.1-21.9 49-49 49S4 31.1 4 4"></path>
+            </svg>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="grid-column">
+      <div class="grid-column__head _head-sixth"></div>
+      <div class="grid-column__main _main-sixth"></div>
+      <div class="grid-column__additional _additional-sixth"></div>
+      <div class="grid-column__footer _footer-sixth">
+      </div>
+    </div>
+  </section>
+  <section class="job">
+    <div class="job-main">
+      <h2 class="job-main__header">Browse<br />the Jobs</h2>
+      <div class="job-main__content">
+        <p class="job-main__content-header">Powered by</p>
+        <p class="job-main__content-info">CodePen Jobs</p>
+      </div>
+      <a href="" class="job-main__btn _first-btn">Post a Job</a>
+      <a href="" class="job-main__btn _second-btn">See more Jobs</a>
+    </div>
+    <div class="job-cards">
+      <div class="job-cards__item">
+        <p class="job-cards__item-text"><span class="_underlined">Vitamin</span> is hiring a
+          Front-end<br />Developer </p>
+        <svg class="job-cards__item-svg" width="16px" height="16px" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.727 2A4.727 4.727 0 0 0 4 6.727c0 1.826 1.198 3.65 2.59 5.12a18.357 18.357 0 0 0 2.137 1.917 18.36 18.36 0 0 0 2.138-1.918c1.392-1.469 2.59-3.293 2.59-5.119A4.727 4.727 0 0 0 8.726 2zm0 13l-.555.832-.002-.002-.005-.003-.016-.01a6.814 6.814 0 0 1-.253-.18 20.364 20.364 0 0 1-2.758-2.416C3.666 11.669 2 9.357 2 6.728a6.727 6.727 0 1 1 13.454 0c0 2.63-1.665 4.941-3.137 6.495a20.366 20.366 0 0 1-2.956 2.556 6.845 6.845 0 0 1-.055.038l-.016.01-.005.004-.002.001s-.001.001-.556-.831zm0 0l.555.832a1 1 0 0 1-1.11 0L8.727 15z">
+          </path>
+          <path d="M8.727 8.637a1.91 1.91 0 1 0 0-3.819 1.91 1.91 0 0 0 0 3.819z"></path>
+        </svg>
+      </div>
+      <div class="job-cards__item">
+        <p class="job-cards__item-text"><span class="_underlined">Pitch</span>
+          is hiring a
+          Senior Fullstack Web<br />Engineer</p>
+        <svg class="job-cards__item-svg" width="16px" height="16px" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.727 2A4.727 4.727 0 0 0 4 6.727c0 1.826 1.198 3.65 2.59 5.12a18.357 18.357 0 0 0 2.137 1.917 18.36 18.36 0 0 0 2.138-1.918c1.392-1.469 2.59-3.293 2.59-5.119A4.727 4.727 0 0 0 8.726 2zm0 13l-.555.832-.002-.002-.005-.003-.016-.01a6.814 6.814 0 0 1-.253-.18 20.364 20.364 0 0 1-2.758-2.416C3.666 11.669 2 9.357 2 6.728a6.727 6.727 0 1 1 13.454 0c0 2.63-1.665 4.941-3.137 6.495a20.366 20.366 0 0 1-2.956 2.556 6.845 6.845 0 0 1-.055.038l-.016.01-.005.004-.002.001s-.001.001-.556-.831zm0 0l.555.832a1 1 0 0 1-1.11 0L8.727 15z">
+          </path>
+          <path d="M8.727 8.637a1.91 1.91 0 1 0 0-3.819 1.91 1.91 0 0 0 0 3.819z"></path>
+        </svg>
+      </div>
+      <div class="job-cards__item">
+        <p class="job-cards__item-text"><span class="_underlined">Minddistrict</span> is hiring a
+          Front-end<br />Developer </p>
+        <svg class="job-cards__item-svg" width="16px" height="16px" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.727 2A4.727 4.727 0 0 0 4 6.727c0 1.826 1.198 3.65 2.59 5.12a18.357 18.357 0 0 0 2.137 1.917 18.36 18.36 0 0 0 2.138-1.918c1.392-1.469 2.59-3.293 2.59-5.119A4.727 4.727 0 0 0 8.726 2zm0 13l-.555.832-.002-.002-.005-.003-.016-.01a6.814 6.814 0 0 1-.253-.18 20.364 20.364 0 0 1-2.758-2.416C3.666 11.669 2 9.357 2 6.728a6.727 6.727 0 1 1 13.454 0c0 2.63-1.665 4.941-3.137 6.495a20.366 20.366 0 0 1-2.956 2.556 6.845 6.845 0 0 1-.055.038l-.016.01-.005.004-.002.001s-.001.001-.556-.831zm0 0l.555.832a1 1 0 0 1-1.11 0L8.727 15z">
+          </path>
+          <path d="M8.727 8.637a1.91 1.91 0 1 0 0-3.819 1.91 1.91 0 0 0 0 3.819z"></path>
+        </svg>
+      </div>
+      <div class="job-cards__item">
+        <p class="job-cards__item-text"><span class="_underlined">Unmock.io</span> is hiring a
+          Community<br />Manager</p>
+        <svg class="job-cards__item-svg" width="16px" height="16px" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.727 2A4.727 4.727 0 0 0 4 6.727c0 1.826 1.198 3.65 2.59 5.12a18.357 18.357 0 0 0 2.137 1.917 18.36 18.36 0 0 0 2.138-1.918c1.392-1.469 2.59-3.293 2.59-5.119A4.727 4.727 0 0 0 8.726 2zm0 13l-.555.832-.002-.002-.005-.003-.016-.01a6.814 6.814 0 0 1-.253-.18 20.364 20.364 0 0 1-2.758-2.416C3.666 11.669 2 9.357 2 6.728a6.727 6.727 0 1 1 13.454 0c0 2.63-1.665 4.941-3.137 6.495a20.366 20.366 0 0 1-2.956 2.556 6.845 6.845 0 0 1-.055.038l-.016.01-.005.004-.002.001s-.001.001-.556-.831zm0 0l.555.832a1 1 0 0 1-1.11 0L8.727 15z">
+          </path>
+          <path d="M8.727 8.637a1.91 1.91 0 1 0 0-3.819 1.91 1.91 0 0 0 0 3.819z"></path>
+        </svg>
+      </div>
+      <div class="job-cards__item">
+        <p class="job-cards__item-text"><span class="_underlined">We the Collective</span> is hiring a
+          Front<br />End Developer </p>
+        <svg class="job-cards__item-svg" width="16px" height="16px" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.727 2A4.727 4.727 0 0 0 4 6.727c0 1.826 1.198 3.65 2.59 5.12a18.357 18.357 0 0 0 2.137 1.917 18.36 18.36 0 0 0 2.138-1.918c1.392-1.469 2.59-3.293 2.59-5.119A4.727 4.727 0 0 0 8.726 2zm0 13l-.555.832-.002-.002-.005-.003-.016-.01a6.814 6.814 0 0 1-.253-.18 20.364 20.364 0 0 1-2.758-2.416C3.666 11.669 2 9.357 2 6.728a6.727 6.727 0 1 1 13.454 0c0 2.63-1.665 4.941-3.137 6.495a20.366 20.366 0 0 1-2.956 2.556 6.845 6.845 0 0 1-.055.038l-.016.01-.005.004-.002.001s-.001.001-.556-.831zm0 0l.555.832a1 1 0 0 1-1.11 0L8.727 15z">
+          </path>
+          <path d="M8.727 8.637a1.91 1.91 0 1 0 0-3.819 1.91 1.91 0 0 0 0 3.819z"></path>
+        </svg>
+      </div>
+      <div class="job-cards__item">
+        <p class="job-cards__item-text"><span class="_underlined">Goldbelly</span> is hiring a
+          Senior Front End<br />Engineer</p>
+        <svg class="job-cards__item-svg" width="16px" height="16px" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" clip-rule="evenodd"
+            d="M8.727 2A4.727 4.727 0 0 0 4 6.727c0 1.826 1.198 3.65 2.59 5.12a18.357 18.357 0 0 0 2.137 1.917 18.36 18.36 0 0 0 2.138-1.918c1.392-1.469 2.59-3.293 2.59-5.119A4.727 4.727 0 0 0 8.726 2zm0 13l-.555.832-.002-.002-.005-.003-.016-.01a6.814 6.814 0 0 1-.253-.18 20.364 20.364 0 0 1-2.758-2.416C3.666 11.669 2 9.357 2 6.728a6.727 6.727 0 1 1 13.454 0c0 2.63-1.665 4.941-3.137 6.495a20.366 20.366 0 0 1-2.956 2.556 6.845 6.845 0 0 1-.055.038l-.016.01-.005.004-.002.001s-.001.001-.556-.831zm0 0l.555.832a1 1 0 0 1-1.11 0L8.727 15z">
+          </path>
+          <path d="M8.727 8.637a1.91 1.91 0 1 0 0-3.819 1.91 1.91 0 0 0 0 3.819z"></path>
+        </svg>
+      </div>
+    </div>
+  </section>
+  <section class="subscribe">
+    <div class="subscribe-content">
+      <hr class="subscribe-content__line">
+      <h2 class="subscribe-content__header">How do you stay up to date in this fast⁠-⁠moving industry?</h2>
+      <p class="subscribe-content__main">A good start is to sign up for our weekly hand-written newsletter. We bring you
+        the best articles and ideas from around the web, and what we think about them.</p>
+      <div class="subscribe-search">
+        <form class="subscribe-search-form" action="">
+          <input type="search" class="subscribe-search-form__string" name="" id="">
+          <input type="button" class="subscribe-search-form__button" value="Subscribe">
+        </form>
+      </div>
+      <div class="subscribe-content__additional">
+        <div class="subscribe-content__additional-item">
+          <p class="subscribe-content__additional-item-text _colored">Facebook</p>
+          <p class="subscribe-content__additional-item-text _grey">@CSSTricks</p>
+        </div>
+        <div class="subscribe-content__additional-item">
+          <p class="subscribe-content__additional-item-text _colored">Twitter</p>
+          <p class="subscribe-content__additional-item-text _grey">@CSS</p>
+        </div>
+        <div class="subscribe-content__additional-item">
+          <p class="subscribe-content__additional-item-text _colored">YouTube</p>
+          <p class="subscribe-content__additional-item-text _grey">@realcsstricks</p>
+        </div>
+        <div class="subscribe-content__additional-item">
+          <p class="subscribe-content__additional-item-text _colored">Spectrum</p>
+          <p class="subscribe-content__additional-item-text _grey">@css-tricks</p>
+        </div>
+        <div class="subscribe-content__additional-item">
+          <p class="subscribe-content__additional-item-text _colored">RSS</p>
+          <p class="subscribe-content__additional-item-text _grey">Feed</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

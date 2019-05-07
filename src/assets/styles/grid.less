@@ -1,0 +1,215 @@
+.grid{
+    position: relative;
+    display: flex;
+    background-color: @backgroundColor;
+    padding-top: 243px;
+    &-column{
+        display: flex;
+        flex-direction: column;
+        width: 16.65%;
+        position: relative;
+        z-index: 3;
+        &__head{
+            width: 100%;
+            box-sizing: content-box;
+            height: 205px;
+            display: flex;
+            &-content{
+                padding-top: 99px;
+                padding-left: 33px;
+                font-size: 13px;
+                color: @yellow;
+                &-value{
+                    padding-left: 7px;
+                    color: @lightBlue;
+                }
+                &-number{
+                    padding-left: 7px;
+                    color: @darkOrange;
+                }
+            }
+            &-header{
+                font-size: 32px;
+                font-weight: 700;
+                color: @white;
+            }
+        }
+        ._head{
+            &-fifth{
+                border: 1px solid @darkenGrey;
+                border-top: 4px solid @red;
+                border-left: 4px solid @red;
+                border-top-left-radius: 17px;
+                border-bottom-right-radius: 17px;
+                background-color: @backgroundColor;
+            }
+            &-sixth{
+                border-top: 4px solid @red;
+            }
+        }
+        &__main{
+            width: 100%;
+            box-sizing: content-box;
+            height: 334px;
+        }
+        ._main{
+            &-first{
+                height: 330px;
+                background: linear-gradient(225.71deg,@backgroundColor -5.46%,@red 55.6%,@orange 103.75%);
+                border-top: 4px solid @red;
+                border-right: 4px solid @red;
+                border-top-right-radius: 17px;
+                background-color: @backgroundColor;
+            }
+            &-second{
+                box-shadow: 0 0 3rem @black;
+                border-bottom: 1px solid @darkenGrey; 
+                background-color: @backgroundColor;
+                position: relative;
+                left: 4px;
+            }
+            &-forth{
+                border-right: 4px solid @red;
+                border-bottom: 4px solid @red;
+                border-bottom-right-radius: 17px;
+                background-color: @backgroundColor;
+            }
+        }
+        .main-card{
+            padding-top: 32px;
+            padding-left: 30px;
+            width: 100%;
+            height: 100%;
+            &__article{
+                color: @white;
+                font-size: 14px;
+                &-date{
+                    color: @darkGrey;
+                }
+            }
+            &__header{
+                color: @white;
+                font-size: 20px;
+                padding-top: 11px;
+            }
+            &__author{
+                display: flex;
+                padding-top: 70px;
+                position: relative;
+                &-icon{
+                    margin-left: 10px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    filter: grayscale(100%);
+                }
+                &-halfcircle{
+                    width: 60px;
+                    height: 60px;
+                    fill: none;
+                    stroke: @orange;
+                    stroke-width: 8;
+                    stroke-linecap: round;
+                    pointer-events: none;
+                    position: absolute;
+                    margin-top: 2px;
+                }
+                &-name{
+                    padding-left: 26px;
+                    padding-top: 5px;
+                    color: @white;
+                    font-size: 14px;
+                    line-height: 19px;
+                    &-top{
+                        color: @darkGrey;
+                    }
+                }
+            }
+        }
+        ._second-card{
+            .main-card__header{
+                padding-top: 30px;
+            }
+        }
+        ._forth-card{
+            .main-card__header{
+                padding-top: 70px;
+            }
+        }
+        &__additional{
+            width: 100%;
+            height: 287px;
+            box-sizing: content-box;
+            display: flex;
+            &-content{
+                padding-top: 93px;
+                padding-left: 33px;
+                font-size: 13px;
+                line-height: 21px;
+                color: @yellow;
+                &-value{
+                    padding-left: 7px;
+                    color: @lightBlue;
+                }
+                &-number{
+                    padding-left: 7px;
+                    color: @darkOrange;
+                }
+            }
+        }
+        ._additional{
+            &-second{
+                border-left: 4px solid @red;
+                border-bottom: 1px solid @darkenGrey;
+                background-color: @backgroundColor;
+            }
+            &-third{
+                border-left: 4px solid @red;
+                border-top: 4px solid @red;
+                border-top-left-radius: 17px;
+                background-color: @backgroundColor;
+            }
+            &-forth{
+                box-shadow: 0 0 3rem @black;
+                background-color: @backgroundColor;
+            }
+            &-sixth{
+                background-color: @backgroundColor;
+                background: linear-gradient(134.47deg, @backgroundColor 0, @red 127.34%, @orange 195.33%);
+            }
+        }
+        &__footer{
+            width: 100%;
+            height: 365px;
+            box-sizing: content-box;
+        }
+        ._footer-second{
+            width: 98.3%;
+            border: 4px solid @red;
+            border-top: none;
+            border-bottom-left-radius: 17px;
+            border-bottom-right-radius: 17px;
+            background-color: @backgroundColor;
+        }
+        ._footer-fifth{
+            border: 1px solid @darkenGrey;
+            border-top: none;
+            border-bottom-left-radius: 17px;
+            border-bottom-right-radius: 17px;
+            background-color: @backgroundColor;
+        }
+    }
+    &-star{
+        margin: 0;
+        padding: 0;
+        fill: @orange;
+        pointer-events: none;
+        position: absolute;
+        top: 13%;
+        right: 16.66%;
+        width: 56.14%;
+        height: 100%;
+        filter: saturate(125%);
+        z-index: 1;
+    }
+}

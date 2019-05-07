@@ -1,0 +1,137 @@
+.cards{
+    margin-top: 35px;
+    padding-top: 160px;
+    padding-left: 149px;
+    background-color: @backgroundColor;
+    display: flex;
+    justify-content: flex-start;
+    &-popular{
+        color: @white;
+        min-width: 320px;
+        height: 440px;
+        padding-left: 40px;
+        padding-top: 235px;
+        border-radius: 16px;
+        background: linear-gradient(to top, @orange, @red);
+        &__header{
+            font-size: 32px;
+        }
+        &__text{
+            padding-top: 12px;
+            font-size: 15px;
+            line-height: 20px;
+            &-link{
+                font-weight: bold;
+                color: @white;
+                position: relative;
+                font-size: 15px;
+                &:visited{
+                    color: @white;
+                }
+                &::after{
+                    content: '';
+                    height: 1px;
+                    background: @white;
+                    width: 100%;
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    border-radius: 2px;
+                }
+                &:hover::after{
+                    height: 2px;
+                    bottom: -3px;
+                }
+            }
+        }
+    }
+    .scrollbar{
+        display: flex;
+        overflow-x: scroll;
+        padding-left: 60px;
+        padding-bottom: 59px;
+        padding-top: 50px;
+        margin-top: -50px;
+        &-card{
+            padding-top: 32px;
+            padding-left: 30px;
+            min-width: 300px;
+            min-height: 423px;
+            border-radius: 16px;
+            background-color: #17141d;
+            box-shadow: -1rem 0 3rem @black;
+            position: relative;
+            transition: all .2s;
+            &:not(:first-child){
+                margin-left: -130px;
+            }
+            &:hover{
+                transform: translateY(-23px);
+                margin-right: 130px;   
+            }
+            &__article{
+                color: @white;
+                font-size: 14px;
+                &-date{
+                    color: @darkGrey;
+                }
+            }
+            &__header{
+                color: @white;
+                font-size: 20px;
+                padding-top: 21px;
+            }
+            &__author{
+                display: flex;
+                padding-top: 170px;
+                position: relative;
+                &-icon{
+                    margin-left: 10px;
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    filter: grayscale(100%);
+                }
+                &-halfcircle{
+                    width: 60px;
+                    height: 60px;
+                    fill: none;
+                    stroke: @orange;
+                    stroke-width: 8;
+                    stroke-linecap: round;
+                    pointer-events: none;
+                    position: absolute;
+                    margin-top: 2px;
+                }
+                &-name{
+                    padding-left: 26px;
+                    padding-top: 5px;
+                    color: @white;
+                    font-size: 14px;
+                    line-height: 19px;
+                    &-top{
+                        color: @darkGrey;
+                    }
+                }
+            }
+            &__button{
+                display: block;
+                width: 163px;
+                color: @darkGrey;
+                font-size: 10px;
+                font-weight: bold;
+                text-transform: uppercase;
+                margin-top: 46px;
+                margin-left: 1px;
+                border: 3px solid @lightBlack;
+                padding-bottom: 5px;
+                padding-top: 3px;
+                padding-left: 18px;
+                border-radius: 18px;
+                &:visited{
+                    color: @darkGrey;
+                }
+            }
+        }
+    }
+}
